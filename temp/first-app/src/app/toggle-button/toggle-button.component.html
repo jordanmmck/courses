@@ -1,0 +1,14 @@
+<button class="btn btn-primary" (click)="onToggleDetails()">Toggle Details</button>
+<p *ngIf="!hidden; else noDetails">Details...</p>
+<ng-template #noDetails><p>-</p></ng-template>
+
+<div>
+  <p
+    class="items"
+    *ngFor="let item of clicks; let i = index"
+    [ngStyle]="{ backgroundColor: i >= 5 ? 'blue' : 'white' }"
+    [ngClass]="{ 'white-text': i >= 5 }"
+  >
+    {{ item }}
+  </p>
+</div>
