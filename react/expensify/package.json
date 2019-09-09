@@ -1,0 +1,48 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "serve": "live-server public/",
+    "build": "webpack",
+    "dev": "webpack-dev-server",
+    "test": "jest --watch --config=jest.config.json"
+  },
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.4.0",
+    "live-server": "^1.2.1",
+    "moment": "^2.24.0",
+    "node-sass": "^4.12.0",
+    "normalize.css": "^8.0.1",
+    "raf": "^3.4.1",
+    "react": "^16.9.0",
+    "react-addons-shallow-compare": "^15.6.2",
+    "react-dates": "^20.3.0",
+    "react-dom": "^16.9.0",
+    "react-modal": "^3.9.1",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "react-test-renderer": "^16.9.0",
+    "redux": "^4.0.4",
+    "sass-loader": "^7.2.0",
+    "style-loader": "^1.0.0",
+    "uuid": "^3.3.2",
+    "validator": "^11.1.0",
+    "webpack": "^4.39.1"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0"
+  }
+}

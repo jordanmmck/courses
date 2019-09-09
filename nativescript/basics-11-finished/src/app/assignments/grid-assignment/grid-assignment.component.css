@@ -1,0 +1,25 @@
+/* Add mobile styles for the component here.  */
+GridLayout {
+  border-color: green;
+  border-width: 5;
+}
+
+#i1 {
+  background: red;
+}
+
+#i2 {
+  background: blue;
+}
+
+#i3 {
+  background: orange;
+}
+
+#i4 {
+  background: purple;
+}
+
+#i5 {
+  background: green;
+}
