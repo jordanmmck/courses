@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import ExpenseForm from '../../components/ExpenseForm';
 import expenses from '../fixtures/expenses';
+import moment from 'moment';
 
 test('should render ExpenseForm', () => {
   const wrapper = shallow(<ExpenseForm />);
@@ -75,6 +76,10 @@ test('should call onsubmit prop for valid form submission', () => {
     preventDefault: () => {},
   });
   expect(wrapper.state('error')).toBe('');
-
-  expect(onSubmitSpy).toHaveBeenLastCalledWith({});
+  expect(onSubmitSpy).toHaveBeenLastCalledWith({
+    description: expenses[0].description,
+    amount: expenses[0].amount,
+    note: expenses[0].note,
+    createdAt: expenses[0].createdAt,
+  });
 });
